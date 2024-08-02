@@ -1,14 +1,13 @@
-#  this is the setup.py script 
-#  and we con do some code to optamize it fairly 
-
 import pyautogui as pag
 import subprocess
 import time
 
 exe_path = "vpnplanet.exe"
 
-# run exe file pop open 
+
+# Run the executable
 subprocess.Popen([exe_path])
+
 
 actions = [
     (611,528,4),
@@ -25,10 +24,5 @@ actions = [
     (856,156,36),
 ]
 
-
 for x, y, duration in actions:
     pag.click(x, y, duration=duration)
-
-# this code for your privacy and test 
-# end file python
-
